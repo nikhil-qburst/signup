@@ -1,4 +1,4 @@
-package com.qburst.signuplibs.signup
+package com.qburst.signuptemp.signup
 
 sealed class SignUpUiEvent {
     data class FieldChanged(val name: String, val value: String) : SignUpUiEvent()

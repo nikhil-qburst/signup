@@ -1,8 +1,7 @@
-package com.qburst.signuplibs
+package com.qburst.signuptemp
 
 import android.util.Patterns
 import androidx.compose.ui.text.input.KeyboardType
-import com.qburst.signuplibs.signup.SignUpField
 
 
 val validateUsername: (String) -> String? = {
@@ -30,9 +29,9 @@ val validateUsername: (String) -> String? = {
     }
 
 val fields = listOf(
-    SignUpField("username", "Username", validator = validateUsername),
-    SignUpField("email", "Email", validator = validateEmail),
-    SignUpField(
+    com.qburst.signuptemp.signup.SignUpField("username", "Username", validator = validateUsername),
+    com.qburst.signuptemp.signup.SignUpField("email", "Email", validator = validateEmail),
+    com.qburst.signuptemp.signup.SignUpField(
         "password",
         "Password",
         KeyboardType.Password,

@@ -7,10 +7,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.qburst.signuplibs.signup.SignUpRepository
-import com.qburst.signuplibs.signup.SignUpScreen
-import com.qburst.signuplibs.signup.SignUpViewModel
+import com.qburst.signuptemp.signup.SignUpRepository
+import com.qburst.signuptemp.signup.SignUpScreen
+import com.qburst.signuptemp.signup.SignUpViewModel
 import com.qburst.signuplibs.ui.theme.SignUpLibsTheme
+import com.qburst.signuptemp.fields
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

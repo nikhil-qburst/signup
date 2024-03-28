@@ -1,4 +1,4 @@
-package com.qburst.signuplibs.signup
+package com.qburst.signuptemp.signup
 
 import androidx.compose.ui.text.input.KeyboardType
 
