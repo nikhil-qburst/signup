@@ -37,9 +37,9 @@ publishing{
     publications{
         register<MavenPublication>("release"){
             afterEvaluate {
-                groupId = "com.qburst"
+                groupId = "com.github.nikhil-qburst"
                 artifactId = "signuptemp"
-                version = "1.0"
+                version = "1.0.1"
                 from(components["release"])
             }
         }
