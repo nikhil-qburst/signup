@@ -2,7 +2,6 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id ("maven-publish")
-    id("maven-android-sdk-deployer")
 }
 
 android {
@@ -50,7 +49,7 @@ publishing{
                 from(components["release"])
                 pom {
                     // Add additional metadata about your library
-                    name.set("Your Library Name")
+                    name.set("signup-temp")
                     description.set("Description of your library")
                     url.set("com.github.nikhil-qburst/signup")
 
