@@ -28,9 +28,17 @@ val validateUsername: (String) -> String? = {
         }
     }
 
+    val validatePhoneNo: (String) -> String? = {
+        if (Patterns.PHONE.matcher(it).matches())
+            null
+        else
+            "Invalid phone no"
+    }
+
 val fields = listOf(
     com.qburst.signuptemp.signup.SignUpField("username", "Username", validator = validateUsername),
     com.qburst.signuptemp.signup.SignUpField("email", "Email", validator = validateEmail),
+    com.qburst.signuptemp.signup.SignUpField("phone-no", "Phone No", validator = validatePhoneNo),
     com.qburst.signuptemp.signup.SignUpField(
         "password",
         "Password",
